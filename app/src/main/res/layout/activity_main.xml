@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context="com.meag.relojinternacional.MainActivity">
+
+<!-- Texto Hora principal -->
+<TextView
+    android:id="@+id/text_hora_principal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/text_hour_example"
+    android:layout_centerInParent="true"
+    android:layout_alignParentTop="true"
+    android:layout_marginTop="16dp"
+    android:textSize="54sp"/>
+<TextView
+    android:id="@+id/text_ciudad_principal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/text_city_example"
+    android:layout_below="@id/text_hora_principal"
+    android:layout_centerHorizontal="true"
+    android:textSize="24sp"/>
+
+<!-- Linea Horizontal -->
+<View
+    android:id="@+id/view_linea_horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="2dp"
+    android:background="#000"
+    android:layout_margin="10dp"
+    android:layout_below="@id/text_ciudad_principal"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view_linea_horizontal">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/text_city_los_angeles"
+                android:textSize="15sp"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/text_city_los_angeles"
+                android:textSize="15sp"
+                android:textAlignment="center"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/text_city_los_angeles"
+                android:textSize="15sp"
+                android:textAlignment="center"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="#000000"></LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/text_hour_example"
+                android:textAlignment="center"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/text_hour_example"
+                android:textAlignment="center"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/text_hour_example"
+                android:textAlignment="center"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+<!-- Texto Power View -->
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_centerInParent="true"
+    android:text="@string/power_by_nestor"/>
+
+    <LinearLayout
+        android:layout_width="2dp"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true">
+    </LinearLayout>
+
+
+
+</RelativeLayout>
